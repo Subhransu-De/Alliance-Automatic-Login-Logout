@@ -107,9 +107,8 @@ def main() -> None:
                     userIp = getIp()
                     if userIp[0] != False:
                         print(
-                            f"Your IPv{userIp[1]} address is \033[92mxxx.xxx.xxx.xxx\033[0m."
+                            f"Your IPv{userIp[1]} address is \033[92m{userIp[0]}\033[0m."
                         )
-                        # print(f"Your IPv{userIp[1]} address is \033[92m{userIp[0]}\033[0m.")
                     else:
                         print("Failed to retrive your Public IP!")
                     pingStatus = []
